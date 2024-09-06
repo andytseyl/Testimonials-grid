@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 4em;
+}
+
+.box1 {
+  grid-area: aa;
+}
+.box2 {
+  grid-area: bb;
+}
+.box3 {
+  grid-area: cc;
+}
+.box4 {
+  grid-area: dd;
+}
+.box5 {
+  grid-area: ee;
+}
+
+.container {
+  display: grid;
+  gap: 2em;
+  padding: 2em;
+  grid-template-areas:
+    "aa aa bb cc"
+    "dd ee ee cc";
+}
+
+.container > div {
+  border: 1px solid black;
+  text-align: center;
+  padding: 2em;
+}
